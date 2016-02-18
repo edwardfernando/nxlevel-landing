@@ -7,11 +7,15 @@
     <meta name="description" content="Official Site of Next Level Project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
-    <meta property="og:image" content="http://oi67.tinypic.com/w8ayqt.jpg" />
-	<meta property="og:image:secure_url" content="http://oi67.tinypic.com/w8ayqt.jpg" />
-	<meta property="og:image:type" content="image/jpeg" />
-	<meta property="og:image:width" content="400" />
-	<meta property="og:image:height" content="300" />
+
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+	<meta property="og:url"           content="http://www.nxlevelproject.com/" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Next Level Project : Chapter One" />
+	<meta property="og:description"   content="Official Site of Next Level Project - Matthew 28:19 : Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit" />
+	<meta property="og:image"         content="http://oi67.tinypic.com/w8ayqt.jpg" />
+
     <!-- Bootstrap and Font Awesome css-->
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -35,6 +39,22 @@
       <div class="overlay"></div>
       <div class="container">
         <h1 class="cursive">Next Level Project : Chapter One</h1>
+
+        <!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your share button code -->
+		<div class="fb-share-button" 
+			data-href="http://www.nxlevelproject.com/" 
+			data-layout="button_count">
+		</div>
 
         <h4 class="sub">
           <center>
